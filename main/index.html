@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVETOFOR</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <form class="controlPanel">
+        Control panel
+        <select class="mode">
+          <option value="common">Обычный режим</option>
+          <option value="standby">Дежурный режим</option>
+        </select>
+        <div class="hideControls">
+          <button class="on">Hide</button>
+          <button class="off">Unhide</button>
+        </div>
+        <div class="timer" data-timer>
+          Время цикла светофора
+          <input type="number" />
+        </div>
+        <div class="timer" data-red>
+          Время красного сигнала
+          <input type="number" />
+        </div>
+        <div class="timer" data-yellow>
+          Время желтого сигнала
+          <input type="number" />
+        </div>
+        <div class="timer" data-green>
+          Время зеленого сигнала
+          <input type="number" />
+        </div>
+      </form>
+      <div class="svetofor">
+        <div class="circle circle-red"></div>
+        <div class="circle circle-yellow"></div>
+        <div class="circle circle-green"></div>
+      </div>
+      <div class="diagram">
+        <div class="line"><div class="red"></div></div>
+        <div class="line">
+          <div class="yellow-inside"></div>
+          <div class="yellow"></div>
+        </div>
+        <div class="line"><div class="green"></div></div>
+      </div>
+    </section>
+  </body>
+</html>
